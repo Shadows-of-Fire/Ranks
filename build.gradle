@@ -8,16 +8,12 @@ buildscript {
     }
 }
 
-plugins {
-  id 'com.github.johnrengelman.shadow' version '4.0.4'
-}
-
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.12.2-1.0.0"
-group= "shadows.ivsuite"
-archivesBaseName = "IVDigitalSuite"
+group= "shadows.ranks"
+archivesBaseName = "Ranks"
 
 sourceCompatibility = targetCompatibility = "1.8"
 compileJava {
@@ -43,18 +39,6 @@ repositories {
 dependencies {
 	deobfCompile "mezz.jei:jei_1.12.2:+"
 	deobfCompile "mcp.mobius.waila:Hwyla:1.8.+"
-}
-
-shadowJar {
-    dependencies {
-        include(dependency(files('libs/mappedbus-0.5.1.jar')))
-    }
-
-    classifier ''
-}
-
-reobf {
-    shadowJar {} // Reobfuscate the shadowed JAR
 }
 
 processResources
