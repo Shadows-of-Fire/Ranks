@@ -11,7 +11,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
-version = "1.12.2-1.0.0"
+version = "1.12.2-1.0.1"
 group= "shadows.ranks"
 archivesBaseName = "Ranks"
 
@@ -32,7 +32,7 @@ repositories {
         url "https://dvs1.progwml6.com/files/maven"
     }
 	maven {
-		url "http://tehnut.info/maven"
+		url "https://maven.tehnut.info"
 	}
 }
 
